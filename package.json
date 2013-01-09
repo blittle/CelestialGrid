@@ -1,0 +1,17 @@
+{
+    "name": "build",
+    "version": "0.1.0",
+    "description": "Bootstrap template for typescript projects",
+    "author": "Bret Little",
+    "dependencies": {
+
+    },
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-typescript" : "latest",
+        "grunt-requirejs"  : "latest",
+	"grunt-bump"	   : "latest",
+	"grunt-jasmine-runner": "latest"
+    },
+    "engine": "node >= 0.6.0"
+}
