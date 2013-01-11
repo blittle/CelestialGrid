@@ -1,3 +1,4 @@
+
 var someNameSpace;
 (function (someNameSpace) {
     (function (WebRequest) {
@@ -8,3 +9,5 @@ var someNameSpace;
     })(someNameSpace.WebRequest || (someNameSpace.WebRequest = {}));
     var WebRequest = someNameSpace.WebRequest;
 })(someNameSpace || (someNameSpace = {}));
+
+define("build", function(){});

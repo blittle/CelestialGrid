@@ -2,7 +2,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-typescript');
     grunt.loadNpmTasks('grunt-requirejs');
-    grunt.loadNpmTasks('grunt-jasmine-node');
 
     grunt.initConfig({
         typescript: {
