@@ -1,5 +1,7 @@
 export interface TelescopeInterface {
-
+    start(): TelescopeInterface;
+    stop(): TelescopeInterface;
+    isOn(): bool;
 }
 
 export class Telescope implements TelescopeInterface {
