@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/Telescope.js" />
+        <item url="file://$PROJECT_DIR$/src/AutoScope.js" />
+        <item url="file://$PROJECT_DIR$/spec/AutoScopeSpec.js" />
+        <item url="file://$PROJECT_DIR$/app.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/someFile.js" />
+      <root url="file://$PROJECT_DIR$/src/someFile.js" />
+      <root url="file://$PROJECT_DIR$/src/TestClass.js" />
+      <root url="file://$PROJECT_DIR$/src/TestModule.js" />
+      <root url="file://$PROJECT_DIR$/src/TestClass.js" />
+      <root url="file://$PROJECT_DIR$/src/TestModule.js" />
+      <root url="file://$PROJECT_DIR$/src/Telescope.js" />
+      <root url="file://$PROJECT_DIR$/src/AutoScope.js" />
+      <root url="file://$PROJECT_DIR$/spec/AutoScopeSpec.js" />
+      <root url="file://$PROJECT_DIR$/app.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
