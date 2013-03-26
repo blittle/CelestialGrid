@@ -26,5 +26,16 @@ export class Telescope implements TelescopeInterface {
         return this.on;
     }
 
+    public static getZenith(date?: Date) : Object {
+        date = date || new Date();
+        return {
+            declination: Telescope.getCoord(date)
+        }
+    }
+
+    private static getCoord(date: Date): number {
+        return date.getTime();
+    }
+
 }
 

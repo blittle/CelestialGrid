@@ -3,10 +3,12 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/app.js" />
+        <item url="file://$PROJECT_DIR$/src/Telescope.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/app.js" />
+      <root url="file://$PROJECT_DIR$/src/Telescope.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

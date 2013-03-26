@@ -13,6 +13,15 @@ var Telescope = (function () {
     Telescope.prototype.isOn = function () {
         return this.on;
     };
+    Telescope.getZenith = function getZenith(date) {
+        date = date || new Date();
+        return {
+            declination: Telescope.getCoord(date)
+        };
+    };
+    Telescope.getCoord = function getCoord(date) {
+        return date.getTime();
+    };
     return Telescope;
 })();
 exports.Telescope = Telescope;
