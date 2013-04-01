@@ -1,13 +1,14 @@
 {
-    "name": "build",
-    "version": "0.1.0",
-    "description": "Bootstrap template for typescript projects",
-    "author": "Bret Little",
-    "dependencies": {
-
-    },
-    "devDependencies": {
-        "jasmine-node": "latest"
-    },
-    "engine": "node >= 0.6.0"
+  "name": "build",
+  "version": "0.1.0",
+  "description": "Bootstrap template for typescript projects",
+  "author": "Bret Little",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jasmine-node": "latest",
+    "grunt": "~0.4.1",
+    "grunt-typescript": "latest"
+  },
+  "engine": "node >= 0.6.0"
 }
