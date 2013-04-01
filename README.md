@@ -1,5 +1,4 @@
-Typescript Bootstrap for Node Apps
-====================
+CelestialGrid
+=============
 
-A bootstrap repo for getting up and running with NodeJS applications written in TypeScript. Specifically, 
-the repo is tied to work with IntelliJ and/or GruntJS.
+CelestialGrid - An Automated and Integrated Observatory Control System
