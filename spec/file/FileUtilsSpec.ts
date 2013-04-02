@@ -3,6 +3,10 @@
 
 import FileUtils = module("../../src/file/FileUtils");
 import fs = module("fs");
+import logging = module("logg");
+
+var logger = logging.getLogger("cg");
+logger.setLogLevel(logging.Level.FINEST);
 
 describe("File Utils", () => {
 
@@ -12,10 +16,10 @@ describe("File Utils", () => {
             ["test", "3", "dsf"]
         ];
 
-    it("Should write a csv file", () => {
+    it("Should write a csv file", (done) => {
         FileUtils.FileUtils.writeCSV(data, tempPath, (err) => {
             expect(err).toBeNull();
-            fs.unlink(tempPath);
+            fs.unlink(tempPath, done);
         });
     });
 
@@ -24,6 +28,8 @@ describe("File Utils", () => {
             FileUtils.FileUtils.readCSV("temp.out", (err, readObject) => {
                 expect(readObject).toBeDefined();
                 expect(readObject.length).toEqual(2);
+                expect(readObject[0].length).toEqual(4);
+                expect(readObject[1].length).toEqual(3);
                 expect(readObject[0][0]).toEqual("some value");
                 expect(readObject[0][2]).toEqual("3");
                 expect(readObject[0][3]).toEqual('4');

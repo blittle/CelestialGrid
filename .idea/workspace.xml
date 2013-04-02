@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp.out" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/file/FileUtils.ts" afterPath="$PROJECT_DIR$/src/file/FileUtils.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" afterPath="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="typescript-node-bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364852291271" ignored="false" />
+    <file path="/Dummy.txt" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364916735390" ignored="false" />
     <file path="$PROJECT_DIR$/../typescript-namespace-bootstrap/spec/TelescopeSpec.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364336565147" ignored="false" />
     <file path="/Gruntfile.js" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364335779301" ignored="false" />
     <file path="$PROJECT_DIR$/../typescript-namespace-bootstrap/Gruntfile.js" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364336662877" ignored="false" />
@@ -20,12 +22,13 @@
     <file path="$PROJECT_DIR$/../typescript-namespace-bootstrap/spec/TelescopeSpec.js.map" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364336582311" ignored="false" />
     <file path="/Telescope.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364337300231" ignored="false" />
     <file path="/app.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364396882463" ignored="false" />
-    <file path="/package.json" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364871121865" ignored="false" />
+    <file path="/package.json" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364937989415" ignored="false" />
     <file path="/GruntFile.js" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364849840514" ignored="false" />
-    <file path="/FileUtils.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364872471126" ignored="false" />
-    <file path="/FileUtilsSpec.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364873520554" ignored="false" />
+    <file path="/FileUtils.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364938279245" ignored="false" />
+    <file path="/FileUtilsSpec.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364938633762" ignored="false" />
     <file path="/node.d.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364871009673" ignored="false" />
     <file path="/jasmine.d.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364872785447" ignored="false" />
+    <file path="/logg.d.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364937679140" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -77,6 +79,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -90,6 +93,24 @@
         <entry file="file://$PROJECT_DIR$/typescript-def/numeraljs.d.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="21" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jasmine.d.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/typescript-def/jasmine.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="58" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtilsSpec.ts" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="75" selection-start="860" selection-end="860" vertical-scroll-proportion="0.6818182">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -97,52 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="logg.d.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/typescript-def/logg.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="357" selection-end="357" vertical-scroll-proportion="-9.375">
+            <state line="23" column="63" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtils.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="53" selection-start="0" selection-end="53" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtilsSpec.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="488" selection-end="488" vertical-scroll-proportion="0.36655405">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtils.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/file/FileUtils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1364873529416" expanded="true" signature="368:449" placeholder="{...}" />
-                <marker date="1364873529416" expanded="true" signature="479:529" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node.d.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/typescript-def/node.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="789" column="97" selection-start="33096" selection-end="33096" vertical-scroll-proportion="-7.96">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -156,10 +136,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUtilsSpec.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
+      <file leaf-file-name="node.d.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/typescript-def/node.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="36" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+            <state line="215" column="48" selection-start="7945" selection-end="7945" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/file/FileUtils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="29" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1364938636548" expanded="true" signature="436:517" placeholder="{...}" />
+                <marker date="1364938636548" expanded="true" signature="547:816" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtilsSpec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1364938636556" expanded="true" signature="395:433" placeholder="{...}" />
+                <marker date="1364938636556" expanded="true" signature="707:1319" placeholder="{...}" />
+                <marker date="1364938636556" expanded="true" signature="733:1266" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.ts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="35" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -167,13 +181,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jasmine.d.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/typescript-def/jasmine.d.ts">
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="58" selection-start="679" selection-end="679" vertical-scroll-proportion="-5.6">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="8" column="22" selection-start="232" selection-end="232" vertical-scroll-proportion="-5.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,17 +217,18 @@
         <option value="$PROJECT_DIR$/spec/AutoScopeSpec.ts" />
         <option value="$PROJECT_DIR$/typescript-def/numeraljs.d.ts" />
         <option value="$PROJECT_DIR$/typescript-def/node.d.ts" />
+        <option value="$PROJECT_DIR$/typescript-def/jasmine.d.ts" />
+        <option value="$PROJECT_DIR$/spec/file/FileUtilsSpec.js" />
+        <option value="$PROJECT_DIR$/typescript-def/logg.d.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/file/FileUtils.ts" />
-        <option value="$PROJECT_DIR$/typescript-def/jasmine.d.ts" />
         <option value="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" />
-        <option value="$PROJECT_DIR$/spec/file/FileUtilsSpec.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1920" />
-    <option name="height" value="1044" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -342,6 +355,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typescript-node-bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CelestialGrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typescript-node-bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CelestialGrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -361,11 +406,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Node.js.Jasmine Tests">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -380,6 +425,22 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -408,22 +469,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -495,7 +540,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1044" extended-state="4" />
+    <frame x="0" y="0" width="1920" height="1049" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -516,8 +561,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25133404" sideWeight="0.66554433" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33445567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25133404" sideWeight="0.6655481" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3344519" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -594,68 +639,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controller/weatherStation/WeatherStation.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/webCamera/WebCamera.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/telescope/ccd/CCD.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/telescope/filterWheel/FilterWheel.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/telescope/focuser/Focuser.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/telescope/mount/Mount.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/typescript-def/numeraljs.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="21" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/FileUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1364873529416" expanded="true" signature="368:449" placeholder="{...}" />
-            <marker date="1364873529416" expanded="true" signature="479:529" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="357" selection-end="357" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
@@ -667,44 +681,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript-def/node.d.ts">
+    <entry file="file://$PROJECT_DIR$/typescript-def/jasmine.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="789" column="97" selection-start="33096" selection-end="33096" vertical-scroll-proportion="-7.96">
+        <state line="11" column="58" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1364938636556" expanded="true" signature="395:433" placeholder="{...}" />
+            <marker date="1364938636556" expanded="true" signature="707:1319" placeholder="{...}" />
+            <marker date="1364938636556" expanded="true" signature="733:1266" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript-def/jasmine.d.ts">
+    <entry file="file://$PROJECT_DIR$/typescript-def/node.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="679" selection-end="679" vertical-scroll-proportion="-5.6">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="215" column="48" selection-start="7945" selection-end="7945" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="232" selection-end="232" vertical-scroll-proportion="-5.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="53" selection-start="0" selection-end="53" vertical-scroll-proportion="0.0">
+        <state line="22" column="35" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file/FileUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="29" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1364938636548" expanded="true" signature="436:517" placeholder="{...}" />
+            <marker date="1364938636548" expanded="true" signature="547:816" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript-def/logg.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="63" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+        <state line="27" column="75" selection-start="860" selection-end="860" vertical-scroll-proportion="0.6818182">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="488" selection-end="488" vertical-scroll-proportion="0.36655405">
-          <folding />
         </state>
       </provider>
     </entry>

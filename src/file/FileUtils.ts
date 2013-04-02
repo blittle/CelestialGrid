@@ -1,8 +1,12 @@
 ///<reference path="../../typescript-def/node.d.ts"/>
 ///<reference path="../../typescript-def/underscore.d.ts"/>
+///<reference path="../../typescript-def/logg.d.ts"/>
 
 import fs = module("fs");
 import _ = module("underscore");
+import logging = module("logg");
+
+var logger = logging.getLogger("cg");
 
 export class FileUtils {
 
@@ -13,11 +17,11 @@ export class FileUtils {
      * @param filePath
      * @param callback
      */
-    public static writeCSV(obj: any, filePath: string, callback ?: Function): void {
+    public static writeCSV(obj: any, filePath: string, callback?: Function): void {
 
         var outputString = "";
 
-        _.each(obj, function(line, i) {
+        _.each(obj, (line, i) => {
             if(i !== 0) outputString += "\r\n";
 
             _.each(line, function(el, i) {
@@ -25,14 +29,29 @@ export class FileUtils {
             });
         });
 
-        fs.writeFile(filePath, outputString, callback);
+        fs.writeFile(filePath, outputString, (err) => {
+
+            if(err) {
+                logger.error("Cannot write csv", filePath, err);
+            } else {
+                logger.info("Write csv", filePath);
+            }
+
+            callback(err);
+        });
     }
 
-    public static readCSV(filePath: string, callback ?: Function): void {
+    public static readCSV(filePath: string, callback?: Function): void {
         fs.readFile(filePath, (err, data) => {
             var lines;
 
-            if(err) callback(err);
+            if(err) {
+                logger.error("ERROR: Cannot read csv", filePath, err);
+                callback(err);
+                return;
+            }
+
+            logger.info("Read csv", filePath);
 
             lines = (data+"").split("\r\n");
 
@@ -45,7 +64,30 @@ export class FileUtils {
         });
     }
 
-    public static writeJSON(obj: Object, filePath: string): void {
+    public static writeJSON(obj: Object, filePath: string, callback?: Function): void {
+        fs.writeFile(filePath, obj, (err) => {
 
+            if(err) {
+                logger.error("Cannot write json", filePath, err);
+            } else {
+                logger.info("Write json", filePath);
+            }
+
+
+            callback(err);
+        });
+    }
+
+    public static deleteFile(filePath: string, callback?: Function) {
+        fs.unlink(filePath, (err) => {
+
+            if(err) {
+                logger.error("Cannot delete file", filePath, err);
+            } else {
+                logger.info("Deleted file", filePath);
+            }
+
+            callback(err);
+        });
     }
 }
