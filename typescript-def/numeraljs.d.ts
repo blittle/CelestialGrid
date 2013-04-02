@@ -39,4 +39,8 @@ interface Numeral {
     difference(value: any): number;
 }
 
-declare var numeral: Numeral;
+//declare var numeral: Numeral;
+
+declare module "numeral" {
+    export var fn : Numeral;
+}

@@ -1,5 +1,6 @@
 ///<reference path="../../typescript-def/jasmine.d.ts"/>
 ///<reference path="../../typescript-def/node.d.ts"/>
+///<reference path="../../typescript-def/logg.d.ts"/>
 
 import FileUtils = module("../../src/file/FileUtils");
 import fs = module("fs");
