@@ -4,3 +4,7 @@ node_modules/*.*
 *.map
 src/**/*.js
 src/**/*.map
+.idea/**/*
+.idea/*.*
+typescript-bootstrap.iml
+typescript-node-bootstrap.iml
