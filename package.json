@@ -4,6 +4,8 @@
   "description": "Bootstrap template for typescript projects",
   "author": "Bret Little",
   "dependencies": {
+      "numeral": "latest",
+      "underscore": "latest"
   },
   "devDependencies": {
     "jasmine-node": "latest",

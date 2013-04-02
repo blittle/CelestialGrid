@@ -2,15 +2,21 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js" />
+        <item url="file://$PROJECT_DIR$/spec/AutoScopeSpec.js" />
         <item url="file://$PROJECT_DIR$/app.js" />
-        <item url="file://$PROJECT_DIR$/src/AutoScope.js" />
-        <item url="file://$PROJECT_DIR$/src/Telescope.js" />
+        <item url="file://$PROJECT_DIR$/src/file/FileUtils.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app.js" />
       <root url="file://$PROJECT_DIR$/src/AutoScope.js" />
       <root url="file://$PROJECT_DIR$/src/Telescope.js" />
+      <root url="file://$PROJECT_DIR$/src/AutoScope.js" />
+      <root url="file://$PROJECT_DIR$/src/Telescope.js" />
+      <root url="file://$PROJECT_DIR$/spec/AutoScopeSpec.js" />
+      <root url="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js" />
+      <root url="file://$PROJECT_DIR$/app.js" />
+      <root url="file://$PROJECT_DIR$/src/file/FileUtils.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

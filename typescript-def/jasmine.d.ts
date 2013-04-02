@@ -4,7 +4,7 @@
 
 declare function describe(description : string, specDefinitions : () => void ): void;
 declare function xdescribe(description : string, specDefinitions : () => void ): void;
-declare function it(description : string, func : () => void ): void;
+declare function it(description : string, func : (done ?: () => void ) => void ): void;
 declare function xit(description : string, func : () => void ): void;
 declare function expect(actual: any): jasmine.Matchers;
 declare function beforeEach(afterEachFunction:() => void ): void;

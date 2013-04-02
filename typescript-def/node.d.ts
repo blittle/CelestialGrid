@@ -787,6 +787,7 @@ import stream = module("stream");
     export function readFileSync(filename: string): NodeBuffer;
     export function readFileSync(filename: string, encoding: string): string;
     export function writeFile(filename: string, data: any, encoding?: string, callback?: Function): void;
+    export function writeFile(filename: string, data: any, callback?: Function): void;
     export function writeFileSync(filename: string, data: any, encoding?: string): void;
     export function appendFile(filename: string, data: any, encoding?: string, callback?: Function): void;
     export function appendFileSync(filename: string, data: any, encoding?: string): void;
