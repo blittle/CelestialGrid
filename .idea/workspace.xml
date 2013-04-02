@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/telescope/ccd/CCD.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CGClient.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CGServer.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/coordinates/CelestialObject.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/Controller.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/coordinates/Coordinates.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/coordinates/Dec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/dome/Dome.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/file/File.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/file/FileUtils.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/telescope/filterWheel/FilterWheel.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/telescope/focuser/Focuser.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/observation/Image.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/telescope/mount/Mount.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/observation/Observation.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/observation/ObservationRun.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/observatoroy/Observatory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/coordinates/RightAsc.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/coordinates/Spherical.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/telescope/Telescope.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/weatherStation/WeatherStation.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/webCamera/WebCamera.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permissions/org.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permissions/user.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/AutoScopeSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/AutoScopeSpec.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/AutoScopeSpec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AutoScope.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Telescope.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typescript-def/jasmine.d.ts" afterPath="$PROJECT_DIR$/typescript-def/jasmine.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typescript-def/node.d.ts" afterPath="$PROJECT_DIR$/typescript-def/node.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" afterPath="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.out" afterPath="$PROJECT_DIR$/temp.out" />
     </list>
     <ignored path="typescript-node-bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUtils.ts" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FileUtils.ts" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="11" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
+            <state line="40" column="37" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5945946">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -153,7 +120,7 @@
       <file leaf-file-name="FileUtilsSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,8 +131,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1364872831692" expanded="true" signature="368:449" placeholder="{...}" />
-                <marker date="1364872831692" expanded="true" signature="479:529" placeholder="{...}" />
+                <marker date="1364872981840" expanded="true" signature="368:449" placeholder="{...}" />
+                <marker date="1364872981840" expanded="true" signature="479:529" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -191,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUtilsSpec.ts" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FileUtilsSpec.ts" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="37" selection-start="918" selection-end="918" vertical-scroll-proportion="0.6587838">
+            <state line="8" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,7 +181,7 @@
       <file leaf-file-name="temp.out" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temp.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+            <state line="1" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -559,7 +526,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25133404" sideWeight="0.66554433" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33445567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33445567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -689,8 +656,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1364872831692" expanded="true" signature="368:449" placeholder="{...}" />
-            <marker date="1364872831692" expanded="true" signature="479:529" placeholder="{...}" />
+            <marker date="1364872981840" expanded="true" signature="368:449" placeholder="{...}" />
+            <marker date="1364872981840" expanded="true" signature="479:529" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -720,24 +687,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temp.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+        <state line="1" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="11" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,8 +710,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="37" selection-start="918" selection-end="918" vertical-scroll-proportion="0.6587838">
+        <state line="8" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="37" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5945946">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
