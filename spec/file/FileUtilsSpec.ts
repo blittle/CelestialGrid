@@ -1,6 +1,8 @@
 ///<reference path="../../typescript-def/jasmine.d.ts"/>
+///<reference path="../../typescript-def/node.d.ts"/>
 
 import FileUtils = module("../../src/file/FileUtils");
+import fs = module("fs");
 
 describe("File Utils", () => {
 
@@ -13,6 +15,7 @@ describe("File Utils", () => {
     it("Should write a csv file", () => {
         FileUtils.FileUtils.writeCSV(data, tempPath, (err) => {
             expect(err).toBeNull();
+            fs.unlink(tempPath);
         });
     });
 
@@ -25,6 +28,7 @@ describe("File Utils", () => {
                 expect(readObject[0][2]).toEqual("3");
                 expect(readObject[0][3]).toEqual('4');
                 expect(readObject[1][2]).toEqual("dsf");
+                fs.unlink(tempPath);
                 done();
             });
         });

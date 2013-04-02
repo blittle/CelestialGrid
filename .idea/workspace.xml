@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temp.out" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" afterPath="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.out" afterPath="$PROJECT_DIR$/temp.out" />
     </list>
     <ignored path="typescript-node-bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +23,7 @@
     <file path="/package.json" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364871121865" ignored="false" />
     <file path="/GruntFile.js" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364849840514" ignored="false" />
     <file path="/FileUtils.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364872471126" ignored="false" />
-    <file path="/FileUtilsSpec.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364872715823" ignored="false" />
+    <file path="/FileUtilsSpec.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364873520554" ignored="false" />
     <file path="/node.d.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364871009673" ignored="false" />
     <file path="/jasmine.d.ts" changelist="88cbba3d-ac1c-4d86-b569-e2f7119c0f0c" time="1364872785447" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,21 +106,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUtils.ts" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FileUtils.ts" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="37" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5945946">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="0" column="53" selection-start="0" selection-end="53" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUtilsSpec.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FileUtilsSpec.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+            <state line="18" column="35" selection-start="488" selection-end="488" vertical-scroll-proportion="0.36655405">
               <folding />
             </state>
           </provider>
@@ -131,8 +129,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1364872981840" expanded="true" signature="368:449" placeholder="{...}" />
-                <marker date="1364872981840" expanded="true" signature="479:529" placeholder="{...}" />
+                <marker date="1364873529416" expanded="true" signature="368:449" placeholder="{...}" />
+                <marker date="1364873529416" expanded="true" signature="479:529" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -161,8 +159,10 @@
       <file leaf-file-name="FileUtilsSpec.ts" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="30" column="36" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,15 +174,6 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="temp.out" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temp.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -215,10 +206,10 @@
         <option value="$PROJECT_DIR$/typescript-def/numeraljs.d.ts" />
         <option value="$PROJECT_DIR$/typescript-def/node.d.ts" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/spec/file/FileUtilsSpec.js" />
         <option value="$PROJECT_DIR$/src/file/FileUtils.ts" />
         <option value="$PROJECT_DIR$/typescript-def/jasmine.d.ts" />
         <option value="$PROJECT_DIR$/spec/file/FileUtilsSpec.ts" />
+        <option value="$PROJECT_DIR$/spec/file/FileUtilsSpec.js" />
       </list>
     </option>
   </component>
@@ -526,7 +517,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25133404" sideWeight="0.66554433" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33445567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33445567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -656,8 +647,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1364872981840" expanded="true" signature="368:449" placeholder="{...}" />
-            <marker date="1364872981840" expanded="true" signature="479:529" placeholder="{...}" />
+            <marker date="1364873529416" expanded="true" signature="368:449" placeholder="{...}" />
+            <marker date="1364873529416" expanded="true" signature="479:529" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -685,20 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typescript-def/jasmine.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="58" selection-start="679" selection-end="679" vertical-scroll-proportion="-5.6">
@@ -708,19 +685,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
+    <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+        <state line="0" column="53" selection-start="0" selection-end="53" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/FileUtils.ts">
+    <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="37" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5945946">
+        <state line="30" column="36" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/file/FileUtilsSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="488" selection-end="488" vertical-scroll-proportion="0.36655405">
+          <folding />
         </state>
       </provider>
     </entry>
