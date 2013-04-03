@@ -42,4 +42,10 @@ describe("Right Ascension", () => {
         expect(raLit.second).toEqual(32.48376);
     });
 
+    it("It should correctly convert to a string", ()=> {
+        var raString = new RightAsc.RightAsc(ra1).toString();
+
+        expect(raString).toEqual("9h 50m 32.48376s");
+    });
+
 });

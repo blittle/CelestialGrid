@@ -7,31 +7,32 @@ export interface DeclinationLiteral {
 }
 
 export class Declination extends Spherical.Spherical {
+
+    constructor(value: number) {
+        super(value);
+    }
+
     getDegree(): number {
-        return 0;
-    }
-
-    getMinute(): number {
-        return 0;
-    }
-
-    getSecond(): number {
-        return 0;
+        return this.getBaseFromNum(this._value);
     }
 
     getValue(): DeclinationLiteral {
         return {
-            degree: 0,
-            minute: 0,
-            second: 0
+            degree: this.getDegree(),
+            minute: this.getMinute(),
+            second: this.getSecond()
         }
     }
 
     toString(): string {
-        var degree = 0,
-            minute = 0,
-            second = 0;
+        var degree = this.getDegree(),
+            minute = this.getMinute(),
+            second = this.getSecond();
 
-        return degree + "deg " + minute + "m " + second + "s";
+        return degree + "deg " + minute + "' " + second + "\"";
+    }
+
+    _getBase(): number {
+        return this.getDegree();
     }
 }

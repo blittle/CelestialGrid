@@ -13,26 +13,10 @@ export class RightAsc extends Spherical.Spherical {
 
     constructor(value: number) {
         super(value);
-
-        this._value = numeral.fn.set(value);
     }
 
     getHour(): number {
         return this.getBaseFromNum(this._value);
-    }
-
-    getMinute(): number {
-        var val = this._value.subtract(this.getHour())
-            .multiply(60);
-        return this.getBaseFromNum(val);
-    }
-
-    getSecond(): number {
-        var val = this._value.subtract(this.getHour())
-            .multiply(60);
-
-        return val.subtract(this.getBaseFromNum(val))
-            .multiply(60).format("0." + this._precision) * 1;
     }
 
     getValue(): RightAscLiteral {
@@ -49,5 +33,9 @@ export class RightAsc extends Spherical.Spherical {
             second = this.getSecond();
 
         return hour + "h " + minute + "m " + second + "s";
+    }
+
+    _getBase(): number {
+        return this.getHour();
     }
 }
