@@ -11,7 +11,7 @@ export class Socket {
 
     constructor(
         public ip: string = "127.0.0.1",
-        public port: string = "7777"
+        public port: number = 7777
     ) {
         this.logger = logging.getLogger("cg");
     }

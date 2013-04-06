@@ -12,7 +12,7 @@ export class CGClient extends Socket.Socket implements Client.Client {
 
     constructor(
         ip: string = "127.0.0.1",
-        port: string = "7777"
+        port: number = 7777
     ) {
         super(ip, port);
         this.logger.info(this.type, "created", ip, port);
@@ -28,7 +28,7 @@ export class CGClient extends Socket.Socket implements Client.Client {
 
         client.connect(this.port, this.ip, function() {
             _this.logger.info(_this.type, "connected", _this.ip, _this.port);
-            _this.client.write("I am Chuck Norris!");
+            _this.client.write(JSON.stringify({"I am Chuck Norris!": "yeah"}));
         });
 
         client.setEncoding(this.encoding);
@@ -58,5 +58,15 @@ export class CGClient extends Socket.Socket implements Client.Client {
 
     onTimeout(a, b, c): void {
 
+    }
+
+    onData(data): void {
+        var _this = this;
+        super.onData(data);
+
+        console.log(data);
+        setTimeout(()=> {
+            _this.client.write("Wattup dawg?");
+        }, 2000);
     }
 }

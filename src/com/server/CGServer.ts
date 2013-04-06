@@ -16,7 +16,7 @@ export class CGServer extends Socket.Socket implements Server.Server {
 
     constructor(
         ip: string = "127.0.0.1",
-        port: string = "7777"
+        port: number = 7777
     ) {
         super(ip, port);
         this.logger.info(this.type, "created", ip, port);
@@ -65,6 +65,11 @@ export class CGServer extends Socket.Socket implements Server.Server {
     onData(data): void {
         super.onData(data);
         console.log(data);
-        this.stop();
+
+        var _this = this;
+
+        setTimeout(()=>{
+            _this.socket.write(JSON.stringify({"hello": "world"}));
+        }, 1000);
     }
 }
