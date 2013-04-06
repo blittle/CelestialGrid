@@ -9,27 +9,23 @@ export class Socket {
     public type: string;
 
     constructor(
-        private ip: string = "127.0.0.1",
-        private port: string = "7777"
+        public ip: string = "127.0.0.1",
+        public port: string = "7777"
     ) {
         this.logger = logging.getLogger("cg");
-        this.logger.info(this.type, "created", ip, port);
-    }
-
-    public onConnect(a, b, c): void {
-        this.logger.info(this.type, "client connected");
     }
 
     public onData(a, b, c): void {
         this.logger.info(this.type, "client data");
+        console.log(a);
     }
 
     public onEnd(a, b, c): void {
         this.logger.info(this.type, "client end");
     }
 
-    public onError(a, b, c): void {
-        this.logger.info(this.type, "client error");
+    public onError(error): void {
+        this.logger.error(this.type, error);
     }
 
     public onClose(a, b, c): void {

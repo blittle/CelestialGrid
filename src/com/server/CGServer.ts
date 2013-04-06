@@ -11,12 +11,14 @@ export class CGServer extends Socket.Socket implements Server.Server {
     private listening = false;
     private server;
 
+    public type = "server";
+
     constructor(
         ip: string = "127.0.0.1",
         port: string = "7777"
     ) {
-        this.type = this.type;
         super(ip, port);
+        this.logger.info(this.type, "created", ip, port);
     }
 
     start(): void {
@@ -24,17 +26,24 @@ export class CGServer extends Socket.Socket implements Server.Server {
         var _this = this;
 
         this.server = net.createServer(function (socket) {
-            _this.logger.info(type, "listening", _this.ip, _this.port);
-            _this.listening = true;
-            socket.addListener("connect", _this.onConnect);
-            socket.addListener("data", _this.onData);
-            socket.addListener("end", _this.onEnd);
-            socket.addListener("error", _this.onError);
-            socket.addListener("close", _this.onClose);
+
+            _this.logger.info(this.type, "connected");
+            _this.connected = true;
+
+            socket.on("data", _this.onData);
+            socket.on("end", _this.onEnd);
+            socket.on("error", _this.onError);
+            socket.on("close", _this.onClose);
         });
+
+
+        _this.listening = true;
+        this.logger.info(this.type, "listening", this.ip, this.port);
     }
 
     stop(): void {
         this.listening = false;
+        this.connected = false;
+        this.server.close();
     }
 }
