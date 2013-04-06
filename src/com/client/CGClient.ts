@@ -24,41 +24,39 @@ export class CGClient extends Socket.Socket implements Client.Client {
 
         this.logger.info(_this.type, "trying to connect", this.ip, this.port);
 
-        this.client = new net.Socket();
-        this.client.connect(this.port, this.ip, function() {
+        var client = new net.Socket();
+
+        client.connect(this.port, this.ip, function() {
             _this.logger.info(_this.type, "connected", _this.ip, _this.port);
-            _this.client.write("Hello!");
+            _this.client.write("I am Chuck Norris!");
         });
 
-        this.client.on('data', (data)=> {
+        client.setEncoding(this.encoding);
+
+        client.on('data', (data)=> {
             _this.onData.call(_this, data);
         });
-        this.client.on("end", (err) => {
+
+        client.on("end", (err) => {
             _this.onEnd.call(_this, err);
         });
-        this.client.on("error", (err) => {
+
+        client.on("error", (err) => {
             _this.onError.call(_this, err);
         });
-        this.client.on("close", (err)=> {
+
+        client.on("close", (err)=> {
             _this.onClose.call(_this, err);
         });
 
+        client.on("timeout", (err)=> {
+            _this.onTimeout.call(_this, err);
+        });
+
+        this.client = client;
     }
 
     onTimeout(a, b, c): void {
 
     }
 }
-
-//var client = net.connect({port: 8124},
-//    function() { //'connect' listener
-//        console.log('client connected');
-//        client.write('world!\r\n');
-//    });
-//client.on('data', function(data) {
-//    console.log(data.toString());
-//    client.end();
-//});
-//client.on('end', function() {
-//    console.log('client disconnected');
-//});

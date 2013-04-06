@@ -7,6 +7,7 @@ export class Socket {
 
     public logger;
     public type: string;
+    public encoding = "utf8";
 
     constructor(
         public ip: string = "127.0.0.1",
@@ -15,9 +16,8 @@ export class Socket {
         this.logger = logging.getLogger("cg");
     }
 
-    public onData(a, b, c): void {
+    public onData(data): void {
         this.logger.info(this.type, "client data");
-        console.log(a);
     }
 
     public onEnd(a, b, c): void {
