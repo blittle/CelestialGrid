@@ -1,75 +1,58 @@
-///<reference path="../../../typescript-def/node.d.ts"/>
-
-import net = module("net");
-
 import Server = module("Server");
-import Socket = module("../Socket");
 
-export class CGServer extends Socket.Socket implements Server.Server {
+export class CGServer {
 
-    private connected = false;
-    private listening = false;
     private server;
 
-    public socket;
-    public type = "server";
-
     constructor(
-        ip: string = "127.0.0.1",
-        port: number = 7777
+        private ServerClass?: any,
+        private ip: string = "127.0.0.1",
+        private port: number = 7777
     ) {
-        super(ip, port);
-        this.logger.info(this.type, "created", ip, port);
+
+        var _this = this;
+
+        this.ServerClass = this.ServerClass || Server.Server;
+
+        this.server = new this.ServerClass({
+            ip: ip,
+            port: port,
+            messageCallback: (msg) => {
+                _this.onMessage.call(_this, msg);
+            },
+            errorCallback: (err) => {
+                _this.onError.call(_this, err);
+            }
+        })
+
     }
 
     start(): void {
-
-        var _this = this;
-
-        this.server = net.createServer(function (socket) {
-
-            _this.logger.info(_this.type, "connected");
-            _this.connected = true;
-
-            socket.on("data", (data)=> {
-                _this.onData.call(_this, data);
-            });
-            socket.on("end", (err)=> {
-                _this.onEnd.call(_this, err);
-            });
-            socket.on("error", (err)=> {
-                _this.onError.call(_this, err);
-            });
-            socket.on("close", (err)=> {
-                _this.onClose.call(_this, err);
-            });
-
-            socket.setEncoding(_this.encoding);
-
-            _this.socket = socket;
-        });
-
-        this.server.listen(this.port, this.ip);
-
-        _this.listening = true;
-        this.logger.info(this.type, "listening", this.ip, this.port);
+        this.server.start();
     }
 
     stop(): void {
-        this.listening = false;
-        this.connected = false;
-        this.server.close();
-        this.socket.destroy();
+        this.server.stop();
     }
 
-    onData(data): void {
-        super.onData(data);
-        console.log(data);
+    getStatus(): void {
+        this.server.sendMessage({
+            cmd: "getStatus"
+        });
+    }
 
-        var _this = this;
+    onMessage(msg: any): void {
 
-        setTimeout(()=>{
-            _this.socket.write(JSON.stringify({"hello": "world"}));
-        }, 1000);
+        var message = JSON.parse(msg);
+
+        switch(message.cmd) {
+            case "getStatus":
+                console.log("STATUS:", message.data);
+                break;
+        }
+    }
+
+    onError(err: any): void {
+
     }
 }

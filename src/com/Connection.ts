@@ -5,3 +5,7 @@ export interface Connection {
     onError(a, b, c): void;
     onClose(a, b, c): void;
 }
+
+export var commands = {
+
+};
