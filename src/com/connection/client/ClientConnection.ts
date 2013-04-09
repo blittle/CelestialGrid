@@ -1,14 +1,14 @@
-///<reference path="../../../typescript-def/node.d.ts"/>
+///<reference path="../../../../typescript-def/node.d.ts"/>
 
 import net = module("net");
-import Socket = module("../Socket");
+import Connection = module("../Connection");
 
-export class Client extends Socket.Socket {
+export class ClientConnection extends Connection.Connection {
 
     public type = "client";
     private client;
 
-    constructor(options : Socket.SocketSettings) {
+    constructor(options : Connection.ConnectionSettings) {
         super(options);
         this.logger.info(this.type, "created", options.ip, options.port);
     }

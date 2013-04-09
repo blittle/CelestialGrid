@@ -1,16 +1,16 @@
-///<reference path="../../typescript-def/logg.d.ts"/>
+///<reference path="../../../typescript-def/logg.d.ts"/>
 
-import Connection = module("Connection");
+import Socket = module("Socket");
 import logging = module("logg");
 
-export interface SocketSettings {
+export interface ConnectionSettings {
     ip ?: string;
     port ?: number;
     errorCallback : (error) => void;
     messageCallback : (message) => void;
 }
 
-export class Socket {
+export class Connection implements Socket.Socket {
 
     public logger;
     public type: string;
@@ -23,7 +23,7 @@ export class Socket {
     public port: number;
 
     constructor(
-        options: SocketSettings
+        options: ConnectionSettings
     ) {
 
         this.ip = options.ip || "127.0.0.1";
@@ -36,12 +36,12 @@ export class Socket {
     }
 
     public onData(data): void {
-        this.logger.info(this.type, "client data");
+        this.logger.info(this.type, "data");
         this.messageCallback(data);
     }
 
-    public onEnd(a, b, c): void {
-        this.logger.info(this.type, "client end");
+    public onEnd(): void {
+        this.logger.info(this.type, "end");
     }
 
     public onError(error): void {
@@ -49,7 +49,7 @@ export class Socket {
         this.errorCallback(error);
     }
 
-    public onClose(a, b, c): void {
-        this.logger.info(this.type, "client close");
+    public onClose(): void {
+        this.logger.info(this.type, "close");
     }
 }

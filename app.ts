@@ -8,6 +8,6 @@ server.start();
 client.connect();
 
 
-setTimeout(()=> {
+setInterval(()=> {
     server.getStatus();
-}, 1000);
+}, 5000);

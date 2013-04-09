@@ -1,4 +1,4 @@
-import Server = module("Server");
+import ServerConnection = module("../connection/server/ServerConnection");
 
 export class CGServer {
 
@@ -12,7 +12,7 @@ export class CGServer {
 
         var _this = this;
 
-        this.ServerClass = this.ServerClass || Server.Server;
+        this.ServerClass = this.ServerClass || ServerConnection.ServerConnection;
 
         this.server = new this.ServerClass({
             ip: ip,

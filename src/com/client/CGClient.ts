@@ -1,4 +1,4 @@
-import Client = module("Client");
+import ClientConnection = module("../connection/client/ClientConnection");
 
 export class CGClient {
 
@@ -11,7 +11,7 @@ export class CGClient {
     ) {
         var _this = this;
 
-        this.ClientClass = this.ClientClass || Client.Client;
+        this.ClientClass = this.ClientClass || ClientConnection.ClientConnection;
 
         this.client = new this.ClientClass({
             ip: ip,
