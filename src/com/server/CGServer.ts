@@ -40,7 +40,7 @@ export class CGServer {
 
     getStatus(): void {
         this.server.sendMessage({
-            cmd: "getStatus"
+            cmd: cmd.GET_STATUS
         });
     }
 
@@ -50,7 +50,16 @@ export class CGServer {
 
         switch(message.cmd) {
             case cmd.GET_STATUS:
-                console.log("STATUS:", message);
+                break;
+            case cmd.SHUT_DOWN:
+                break;
+            case cmd.MOVE_DOME:
+                break;
+            case cmd.MOVE_TELESCOPE:
+                break;
+            case cmd.MOVE_FILTER:
+                break;
+            case cmd.OBSERVATION:
                 break;
         }
     }

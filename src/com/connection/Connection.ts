@@ -43,7 +43,7 @@ export class Connection implements Socket.Socket {
     }
 
     public onData(data): void {
-        this.logger.info(this.type, "data");
+        this.logger.info(this.type, "data", data);
         this.messageCallback(data);
     }
 

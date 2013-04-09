@@ -45,9 +45,26 @@ export class CGClient {
                 this.client.sendMessage({
                     cmd: cmd.GET_STATUS,
                     data: {
-                        status: "wow"
+                        status: {
+                            weather: {
+                                temperature: "5 deg F",
+                                humidity: "32"
+                            },
+                            dome: "Closed",
+                            telescope: "Parked"
+                        }
                     }
                 });
+                break;
+            case cmd.SHUT_DOWN:
+                break;
+            case cmd.MOVE_DOME:
+                break;
+            case cmd.MOVE_TELESCOPE:
+                break;
+            case cmd.MOVE_FILTER:
+                break;
+            case cmd.OBSERVATION:
                 break;
         }
     }
