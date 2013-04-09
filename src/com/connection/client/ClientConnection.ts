@@ -6,7 +6,6 @@ import Connection = module("../Connection");
 export class ClientConnection extends Connection.Connection {
 
     public type = "client";
-    private client;
 
     constructor(options : Connection.ConnectionSettings) {
         super(options);
@@ -22,8 +21,8 @@ export class ClientConnection extends Connection.Connection {
         var client = new net.Socket();
 
         client.connect(this.port, this.ip, function() {
+            _this.connected = true;
             _this.logger.info(_this.type, "connected", _this.ip, _this.port);
-            _this.client.write(JSON.stringify({"I am Chuck Norris!": "yeah"}));
         });
 
         client.setEncoding(this.encoding);
@@ -48,18 +47,15 @@ export class ClientConnection extends Connection.Connection {
             _this.onTimeout.call(_this, err);
         });
 
-        this.client = client;
+        this.connection = client;
     }
 
     onTimeout(a, b, c): void {
 
     }
 
-    sendMessage(data): void {
-        this.client.write(JSON.stringify(data));
-    }
-
     disconnect(): void {
-        this.client.destroy();
+        this.connected = false;
+        this.connection.destroy();
     }
 }

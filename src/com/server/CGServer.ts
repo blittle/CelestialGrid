@@ -1,4 +1,8 @@
 import ServerConnection = module("../connection/server/ServerConnection");
+import Socket = module("../connection/Socket");
+import ComCommands = module("../Commands");
+
+var cmd = ComCommands.commands;
 
 export class CGServer {
 
@@ -23,8 +27,7 @@ export class CGServer {
             errorCallback: (err) => {
                 _this.onError.call(_this, err);
             }
-        })
-
+        });
     }
 
     start(): void {
@@ -46,8 +49,8 @@ export class CGServer {
         var message = JSON.parse(msg);
 
         switch(message.cmd) {
-            case "getStatus":
-                console.log("STATUS:", message.data);
+            case cmd.GET_STATUS:
+                console.log("STATUS:", message);
                 break;
         }
     }

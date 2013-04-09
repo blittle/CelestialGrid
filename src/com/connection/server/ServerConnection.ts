@@ -6,12 +6,10 @@ import Connection = module("../Connection");
 
 export class ServerConnection extends Connection.Connection {
 
-    private connected = false;
-    private listening = false;
     private server;
-
-    public socket;
     public type = "server";
+
+    public listening = false;
 
     constructor(
         options : Connection.ConnectionSettings
@@ -44,7 +42,7 @@ export class ServerConnection extends Connection.Connection {
 
             socket.setEncoding(_this.encoding);
 
-            _this.socket = socket;
+            _this.connection = socket;
         });
 
         this.server.listen(this.port, this.ip);
@@ -57,10 +55,6 @@ export class ServerConnection extends Connection.Connection {
         this.listening = false;
         this.connected = false;
         this.server.close();
-        this.socket.destroy();
-    }
-
-    sendMessage(message): void {
-        this.socket.write(JSON.stringify(message));
+        this.connection.destroy();
     }
 }

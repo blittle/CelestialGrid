@@ -1,7 +1,10 @@
 ///<reference path="../../../typescript-def/logg.d.ts"/>
+///<reference path="../../../typescript-def/node.d.ts"/>
+
+import logging = module("logg");
+import net = module("net");
 
 import Socket = module("Socket");
-import logging = module("logg");
 
 export interface ConnectionSettings {
     ip ?: string;
@@ -21,6 +24,10 @@ export class Connection implements Socket.Socket {
 
     public ip: string;
     public port: number;
+
+    public connection: net.NodeSocket;
+
+    public connected = false;
 
     constructor(
         options: ConnectionSettings
@@ -51,5 +58,9 @@ export class Connection implements Socket.Socket {
 
     public onClose(): void {
         this.logger.info(this.type, "close");
+    }
+
+    public sendMessage(data): void {
+        this.connection.write(JSON.stringify(data));
     }
 }

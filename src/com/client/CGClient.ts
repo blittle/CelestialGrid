@@ -1,4 +1,7 @@
 import ClientConnection = module("../connection/client/ClientConnection");
+import ComCommands = module("../Commands");
+
+var cmd = ComCommands.commands;
 
 export class CGClient {
 
@@ -23,7 +26,6 @@ export class CGClient {
                 _this.onError.call(_this, err);
             }
         })
-
     }
 
     connect(): void {
@@ -39,9 +41,9 @@ export class CGClient {
         var message = JSON.parse(msg);
 
         switch(message.cmd) {
-            case "getStatus":
+            case cmd.GET_STATUS:
                 this.client.sendMessage({
-                    cmd: "getStatus",
+                    cmd: cmd.GET_STATUS,
                     data: {
                         status: "wow"
                     }
