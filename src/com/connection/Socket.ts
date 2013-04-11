@@ -10,7 +10,7 @@ export interface Socket {
     ip: string;
     port: number;
 
-    connection: net.NodeSocket;
+    connection: any; //net.NodeSocket
 
     onData: (data)=> void;
     onEnd: ()=> void;

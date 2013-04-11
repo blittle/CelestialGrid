@@ -25,7 +25,7 @@ export class Connection implements Socket.Socket {
     public ip: string;
     public port: number;
 
-    public connection: net.NodeSocket;
+    public connection: any;
 
     public connected = false;
 

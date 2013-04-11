@@ -9,9 +9,9 @@
       "logg": "latest"
   },
   "devDependencies": {
-    "jasmine-node": "latest",
     "grunt": "~0.4.1",
-    "grunt-typescript": "latest"
+    "grunt-typescript": "latest",
+    "grunt-jasmine-node": "latest"
   },
   "engine": "node >= 0.6.0"
 }

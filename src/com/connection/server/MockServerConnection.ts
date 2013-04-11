@@ -3,7 +3,7 @@
 import net = module("net");
 import Connection = module("../Connection");
 
-export class CGServer extends Connection.Connection {
+export class MockServerConnection extends Connection.Connection {
 
     private connected = false;
     private listening = false;
@@ -22,6 +22,11 @@ export class CGServer extends Connection.Connection {
     start(): void {
         this.listening = true;
         this.connected = true;
+        this.connection = {
+            write: function(str: string, encoding?: string, fd?: string): bool {
+                return false;
+            }
+        }
     }
 
     stop(): void {

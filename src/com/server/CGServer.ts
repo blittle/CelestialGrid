@@ -46,7 +46,12 @@ export class CGServer {
 
     onMessage(msg: any): void {
 
-        var message = JSON.parse(msg);
+        try {
+            var message = JSON.parse(msg);
+        } catch(error) {
+            this.server.logger.error("Cannot parse", msg, error);
+            return;
+        }
 
         switch(message.cmd) {
             case cmd.GET_STATUS:
