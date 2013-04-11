@@ -27,17 +27,44 @@ describe("CGServer", () => {
     });
 
     it("Should listen for incoming connections", ()=> {
+        spyOn(server.server, "start").andCallThrough();
         server.start();
         expect(server.server.listening).toBeTruthy();
+        expect(server.server.start).toHaveBeenCalled();
     });
 
-    it("Should write to the connection", ()=> {
+    it("Should pull status", ()=> {
         server.start();
         expect(server.server.connected).toBeTruthy();
+        server.server.connection = {
+            write: jasmine.createSpy("write")
+        }
+
+        server.getStatus();
+        expect(server.server.connection.write).toHaveBeenCalled();
+        expect(server.server.connection.write).toHaveBeenCalledWith(
+            JSON.stringify({
+                cmd: cmd.GET_STATUS
+            })
+        );
+    });
+
+    it("On message from client should delegate to onMessage callback", ()=> {
+        spyOn(server, "onMessage");
+
+        var testData = JSON.stringify({
+            data: "SomeData"
+        });
+
+        server.server.onData(testData);
+
+        expect(server.onMessage).toHaveBeenCalled();
+        expect(server.onMessage).toHaveBeenCalledWith(testData);
     });
 
     it("Should parse " + cmd.GET_STATUS, ()=> {
-        server.onMessage(JSON.stringify({
+
+        server.server.onData(JSON.stringify({
             cmd: cmd.GET_STATUS,
             data: {
                 status: {

@@ -22,11 +22,6 @@ export class MockServerConnection extends Connection.Connection {
     start(): void {
         this.listening = true;
         this.connected = true;
-        this.connection = {
-            write: function(str: string, encoding?: string, fd?: string): bool {
-                return false;
-            }
-        }
     }
 
     stop(): void {
