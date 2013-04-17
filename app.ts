@@ -1,13 +1,10 @@
-import CGServer = module("src/com/server/CGServer");
 import CGClient = module("src/com/client/CGClient");
+import Rovor = module("src/observatoroy/Rovor");
 
-var server = new CGServer.CGServer();
+var rovor = new Rovor.Rovor();
+rovor.startServer();
+
 var client = new CGClient.CGClient();
-
-server.start();
 client.connect();
 
-
-setInterval(()=> {
-    server.getStatus();
-}, 5000);
+rovor.startPollStatus();

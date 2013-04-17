@@ -1,6 +1,7 @@
 import ServerConnection = module("../connection/server/ServerConnection");
 import Socket = module("../connection/Socket");
 import ComCommands = module("../Commands");
+import ServerCallbacks = module("ServerCallbacks");
 
 var cmd = ComCommands.commands;
 
@@ -10,6 +11,7 @@ export class CGServer {
 
     constructor(
         private ServerClass?: any,
+        private serverCallbacks: ServerCallbacks.ServerCallbacks = new ServerCallbacks.MockServerCallback(),
         private ip: string = "127.0.0.1",
         private port: number = 7777
     ) {
@@ -55,16 +57,22 @@ export class CGServer {
 
         switch(message.cmd) {
             case cmd.GET_STATUS:
+                this.serverCallbacks.getStatusCallback(message.data);
                 break;
             case cmd.SHUT_DOWN:
+                this.serverCallbacks.shutDownCallback(message.data);
                 break;
             case cmd.MOVE_DOME:
+                this.serverCallbacks.moveDomeCallback(message.data);
                 break;
             case cmd.MOVE_TELESCOPE:
+                this.serverCallbacks.moveTelesCallback(message.data);
                 break;
             case cmd.MOVE_FILTER:
+                this.serverCallbacks.moveFilterCallback(message.data);
                 break;
             case cmd.OBSERVATION:
+                this.serverCallbacks.observationCallback(message.data);
                 break;
         }
     }
