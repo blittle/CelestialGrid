@@ -1,12 +1,9 @@
 ///<reference path="../../../../typescript-def/node.d.ts"/>
 import Connection = module("../Connection");
 
-export class MockServerConnection extends Connection.Connection {
+export class MockClientConnection extends Connection.Connection {
 
-    private listening = false;
-    private server;
-
-    public type = "server";
+    public type = "client";
 
     constructor(
         options : Connection.ConnectionSettings
@@ -15,13 +12,15 @@ export class MockServerConnection extends Connection.Connection {
         this.logger.info(this.type, "created", options.ip, options.port);
     }
 
-    start(): void {
-        this.listening = true;
+    connect(): void {
         this.connected = true;
     }
 
-    stop(): void {
-        this.listening = false;
+    onTimeout(a, b, c): void {
+
+    }
+
+    disconnect(): void {
         this.connected = false;
     }
 }

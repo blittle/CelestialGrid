@@ -7,10 +7,10 @@ var cmd = ComCommands.commands;
 
 export class CGServer {
 
-    private server;
+    private connection;
 
     constructor(
-        private ServerClass?: any,
+        private ConnectionClass?: any,
         private serverCallbacks: ServerCallbacks.ServerCallbacks = new ServerCallbacks.MockServerCallback(),
         private ip: string = "127.0.0.1",
         private port: number = 7777
@@ -18,9 +18,9 @@ export class CGServer {
 
         var _this = this;
 
-        this.ServerClass = this.ServerClass || ServerConnection.ServerConnection;
+        this.ConnectionClass = this.ConnectionClass || ServerConnection.ServerConnection;
 
-        this.server = new this.ServerClass({
+        this.connection = new this.ConnectionClass({
             ip: ip,
             port: port,
             messageCallback: (msg) => {
@@ -33,15 +33,15 @@ export class CGServer {
     }
 
     start(): void {
-        this.server.start();
+        this.connection.start();
     }
 
     stop(): void {
-        this.server.stop();
+        this.connection.stop();
     }
 
     getStatus(): void {
-        this.server.sendMessage({
+        this.connection.sendMessage({
             cmd: cmd.GET_STATUS
         });
     }
@@ -51,7 +51,7 @@ export class CGServer {
         try {
             var message = JSON.parse(msg);
         } catch(error) {
-            this.server.logger.error("Cannot parse", msg, error);
+            this.connection.logger.error("Cannot parse", msg, error);
             return;
         }
 

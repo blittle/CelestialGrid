@@ -42,7 +42,7 @@ export class ServerConnection extends Connection.Connection {
 
             socket.setEncoding(_this.encoding);
 
-            _this.connection = socket;
+            _this.socket = socket;
         });
 
         this.server.listen(this.port, this.ip);
@@ -55,6 +55,6 @@ export class ServerConnection extends Connection.Connection {
         this.listening = false;
         this.connected = false;
         this.server.close();
-        this.connection.destroy();
+        this.socket.destroy();
     }
 }

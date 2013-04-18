@@ -21,28 +21,28 @@ describe("CGServer", () => {
     });
 
     it("Should create the cg server", () => {
-        expect(server.ServerClass).toEqual(MockServerConnection.MockServerConnection);
-        expect(server.server).toBeDefined();
-        expect(server.server instanceof MockServerConnection.MockServerConnection).toBeTruthy();
+        expect(server.ConnectionClass).toEqual(MockServerConnection.MockServerConnection);
+        expect(server.connection).toBeDefined();
+        expect(server.connection instanceof MockServerConnection.MockServerConnection).toBeTruthy();
     });
 
     it("Should listen for incoming connections", ()=> {
-        spyOn(server.server, "start").andCallThrough();
+        spyOn(server.connection, "start").andCallThrough();
         server.start();
-        expect(server.server.listening).toBeTruthy();
-        expect(server.server.start).toHaveBeenCalled();
+        expect(server.connection.listening).toBeTruthy();
+        expect(server.connection.start).toHaveBeenCalled();
     });
 
     it("Should pull status", ()=> {
         server.start();
-        expect(server.server.connected).toBeTruthy();
-        server.server.connection = {
+        expect(server.connection.connected).toBeTruthy();
+        server.connection.socket = {
             write: jasmine.createSpy("write")
         }
 
         server.getStatus();
-        expect(server.server.connection.write).toHaveBeenCalled();
-        expect(server.server.connection.write).toHaveBeenCalledWith(
+        expect(server.connection.socket.write).toHaveBeenCalled();
+        expect(server.connection.socket.write).toHaveBeenCalledWith(
             JSON.stringify({
                 cmd: cmd.GET_STATUS
             })
@@ -56,7 +56,7 @@ describe("CGServer", () => {
             data: "SomeData"
         });
 
-        server.server.onData(testData);
+        server.connection.onData(testData);
 
         expect(server.onMessage).toHaveBeenCalled();
         expect(server.onMessage).toHaveBeenCalledWith(testData);
@@ -64,7 +64,7 @@ describe("CGServer", () => {
 
     it("Should parse " + cmd.GET_STATUS, ()=> {
 
-        server.server.onData(JSON.stringify({
+        server.connection.onData(JSON.stringify({
             cmd: cmd.GET_STATUS,
             data: {
                 status: {

@@ -25,7 +25,7 @@ export class Connection implements Socket.Socket {
     public ip: string;
     public port: number;
 
-    public connection: any;
+    public socket: any;
 
     public connected = false;
 
@@ -61,6 +61,6 @@ export class Connection implements Socket.Socket {
     }
 
     public sendMessage(data): void {
-        this.connection.write(JSON.stringify(data));
+        this.socket.write(JSON.stringify(data));
     }
 }

@@ -5,18 +5,18 @@ var cmd = ComCommands.commands;
 
 export class CGClient {
 
-    private client;
+    private connection;
 
     constructor(
-        private ClientClass?: any,
+        private ConnectionClass?: any,
         private ip: string = "127.0.0.1",
         private port: number = 7777
     ) {
         var _this = this;
 
-        this.ClientClass = this.ClientClass || ClientConnection.ClientConnection;
+        this.ConnectionClass = this.ConnectionClass || ClientConnection.ClientConnection;
 
-        this.client = new this.ClientClass({
+        this.connection = new this.ConnectionClass({
             ip: ip,
             port: port,
             messageCallback: (msg) => {
@@ -29,11 +29,11 @@ export class CGClient {
     }
 
     connect(): void {
-        this.client.connect();
+        this.connection.connect();
     }
 
     stop(): void {
-        this.client.stop();
+        this.connection.stop();
     }
 
     onMessage(msg: any): void {
@@ -42,7 +42,7 @@ export class CGClient {
 
         switch(message.cmd) {
             case cmd.GET_STATUS:
-                this.client.sendMessage({
+                this.connection.sendMessage({
                     cmd: cmd.GET_STATUS,
                     data: {
                         status: {

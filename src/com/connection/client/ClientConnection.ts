@@ -20,7 +20,7 @@ export class ClientConnection extends Connection.Connection {
 
         var client = new net.Socket();
 
-        client.connect(this.port, this.ip, function() {
+        client.connect(this.port, this.ip, () => {
             _this.connected = true;
             _this.logger.info(_this.type, "connected", _this.ip, _this.port);
         });
@@ -47,7 +47,7 @@ export class ClientConnection extends Connection.Connection {
             _this.onTimeout.call(_this, err);
         });
 
-        this.connection = client;
+        this.socket = client;
     }
 
     onTimeout(a, b, c): void {
@@ -56,6 +56,6 @@ export class ClientConnection extends Connection.Connection {
 
     disconnect(): void {
         this.connected = false;
-        this.connection.destroy();
+        this.socket.destroy();
     }
 }
