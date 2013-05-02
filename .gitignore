@@ -8,3 +8,4 @@ src/**/*.map
 .idea/*.*
 typescript-bootstrap.iml
 typescript-node-bootstrap.iml
+*.iml
